@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   <input id="phone"  placeholder="请输入号码"/>
+   <input id="phone"  placeholder="请输入号码1"/>
 </body>
 
 </html>
@@ -23,7 +23,7 @@ window.addEventListener('message', function(e) {
     if(e.source != window.parent) { 
         return; 
     } 
-    let data = e;
+    let data = e.data;
     console.log('b.html 接收到的消息:', data); 
     document.getElementById('phone').value = data;
     parent.postMessage('我已经接收到消息了!', e.origin); 
