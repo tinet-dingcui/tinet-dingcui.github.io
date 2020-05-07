@@ -26,6 +26,7 @@ window.addEventListener('message', function(e) {
     let data = e.data;
     console.log('b.html 接收到的消息:', data); 
     document.getElementById('phone').value = data;
+   console.log("input的值",document.getElementById('phone').value);   
     parent.postMessage('我已经接收到消息了!', e.origin); 
 })
 </script>
