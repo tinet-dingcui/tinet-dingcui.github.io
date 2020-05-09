@@ -2852,4 +2852,4 @@ var ClinkAgent = (function (identifier, websocketUrl) {
 
     return ClinkClient;
 
-})("aliyun", "https://ws-bj-test1.clink.cn");
+})("aliyun", "https://ws-bj-test0.clink.cn");
